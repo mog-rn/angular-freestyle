@@ -1,0 +1,70 @@
+.next-steps {
+  font-family: 'Your font', sans-serif;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.step-icon-container {
+  position: relative;
+  width: 30px;
+  flex-shrink: 0;
+}
+
+.step-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #fff;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 5px;
+}
+
+.step-icon-div {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: darkgrey;
+}
+
+.step-content {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.step-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  bottom: -20px;
+  border-left: 2px solid #000;
+  z-index: 0;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.tt_norms500 {
+  font-weight: 500;
+}
+
+.item_text {
+  width: 200px;
+}
